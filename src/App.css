@@ -1,38 +1,346 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #E5E5E5;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
 .App {
+  position: relative;
+  background-color: #F8F8F8;
   text-align: center;
+  width: 375px;
+  height: 667px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  position: absolute;
+  width: 257px;
+  height: 55px;
+  left: 59px;
+  top: 314px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  position: absolute;
+  width: 245px;
+  height: 49px;
+  left: 41px;
+  top: 133px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: left;
+  color: #373737;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2.step4 {
+  width: 300px;
+}
+
+p {
+  position: absolute;
+  width: 307px;
+  height: 123px;
+  left: 34px;
+  top: 387px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+
+h6 {
+  position: absolute;
+  width: 209px;
+  height: 16px;
+  left: 83px;
+  top: 344px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+small {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #A7A9B1;
+}
+
+small.diet {
+  position: absolute;
+  width: 22px;
+  height: 14px;
+  left: 101px;
+  top: 51px;
+}
+
+small.home {
+  position: absolute;
+  width: 33px;
+  height: 14px;
+  left: 146px;
+  top: 51px;
+}
+
+small.travel {
+  position: absolute;
+  width: 32px;
+  height: 14px;
+  left: 196px;
+  top: 51px;
+}
+
+small.other {
+  position: absolute;
+  width: 30px;
+  height: 14px;
+  left: 247px;
+  top: 51px;
+}
+
+small.home:before, small.travel:before, small.other:before  {
+  content: "";
+  width: 40px;
+  height: 10px;
+  background: #DBDBDB;
+  position: absolute;
+  left: -3px;
+  bottom: 20px;
+}
+
+.proBar {
+  width: 40px;
+  height: 10px;
+  background: #F2A7B1;
+  position: absolute;
+  left: 92px;
+  top: 35px;
+}
+
+.fillBar {
+  width: 8px;
+  height: 10px;
+  background: #EC5569;
+  transition: width .3s ease-in;
+}
+
+.count small {
+  position: absolute;
+  width: 88px;
+  height: 14px;
+  left: 41px;
+  top: 103px;
+}
+
+button.btnComponent {
+  font-style: normal;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  color: #fff;
+  font-family: 'Roboto';
+}
+
+img.Image {
+  position: absolute;
+  width: 270px;
+  height: 158px;
+  left: 52px;
+  top: 92px;
+}
+
+.btnComponent {
+  position: absolute;
+  left: 41px;
+  top: 525px;
+  width: 295px;
+  height: 50px;
+  background-color: #48B07A;
+  border: 0px;
+  cursor: pointer;
+}
+
+.btnComponent:focus {
+  outline: none;
+}
+
+.radioGroup label {
+  position: absolute;
+  width: 139.31px;
+  height: 89px;
+  background-color: #fff;
+  border: 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease-in-out;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #373737; 
+}
+
+.radioGroup label:hover {
+  background-color: #EC5569;
+  color: #fff;
+}
+
+.radioGroup input[type="radio"]:checked + label {
+  background-color: #EC5569;
+  color: #fff;
+} 
+
+.radioGroup input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+}
+
+.radioGroup input[type="radio"]:focus {
+  outline: none;
+}
+
+.radioGroup label#op1, .radioGroup input[type="radio"]#op1 {
+  top: 205px;
+  left: 41px;
+}
+.radioGroup label#op2, .radioGroup input[type="radio"]#op2 {
+  top: 205px;
+  left: 197px;
+}
+.radioGroup label#op3, .radioGroup input[type="radio"]#op3 {
+  top: 314px;
+  left: 41px;
+}
+.radioGroup label#op4, .radioGroup input[type="radio"]#op4 {
+  top: 314px;
+  left: 197px;
+}
+
+.radioGroup #op1 span, .radioGroup #op2 span, .radioGroup #op3 span, .radioGroup #op4 span {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 110px;
+  height: 100%;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.topContent {
+  position: absolute;
+  width: 375px;
+  height: 150px;
+  left: 0px;
+  top: 0px;
+  background: #EC5569;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.topContent span {
+  position: absolute;
+  width: 115px;
+  height: 75px;
+  left: 130px;
+  top: 43px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.topContent p {
+  position: absolute;
+  width: 86px;
+  height: 21px;
+  left: 144px;
+  top: 111px;
+  color: #FFFFFF;
+}
+
+.midContent small {
+  position: absolute;
+  width: 163px;
+  height: 35px;
+  left: 106px;
+  top: 218px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #373737;
+}
+
+span.scoreBar {
+  position: absolute;
+  width: 290px;
+  height: 50px;
+  left: 42px;
+  top: 266px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+span.resultBar {
+  position: absolute;
+  width: 187px;
+  height: 34px;
+  left: 50px;
+  top: 274px;
+  background: #EC5569;
+  border-radius: 5px;
+}
+
+.botContent {
+  position: absolute;
+  width: 375px;
+  height: 238px;
+  left: 0px;
+  top: 429px;
+  background: #FFFFFF;
+  z-index: 1;
+}
+
+.botContent p {
+  position: absolute;
+  width: 255px;
+  height: 49px;
+  left: 60px;
+  top: 38px;
+  font-weight: 700;
+  color: #373737;
+  z-index: 2;
+}
+
+.botContent span {
+  color: #5cc3bc;
+  font-style: italic;
+}
+
+.botContent button.btnComponent {
+  top: 96px;
 }
