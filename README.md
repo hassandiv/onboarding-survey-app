@@ -1,68 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Onboarding Survey App - Frontend Application with React
 
-## Available Scripts
+This App is built with React Hooks/Functional components, HTML and CSS.<br>
+You can read useful code comments in the components.<br>
+Online demo to test the app: https://codesandbox.io/s/onboarding-survey-app-262he
 
-In the project directory, you can run:
+## Requirements to use the App:
+1. Download Node JS from https://nodejs.org/en/download/
+* Select the package depends on your operating system Windows or macOS or Linux.
+* Click save on your desktop. 
+* After the downloading is complete, double click on the application to install Node JS on your machine.
+* Follow the installation steps as normal. Now you have Node JS installed on your machine.
+2. Download Visual Studio from https://visualstudio.microsoft.com/downloads/
+3. Downlaod Google chrome browser or use your favourite web browser.
+* Follow the same installation steps above to complete the installation.
 
-### `npm start`
+## How to use/test the App:
+* Download the Onboarding-Survey-App repository from my Github account. You can save it on your desktop to be able to find it quicker.
+* After downloading, you can use visual studio or terminal to open the App directory with following command:
+* Click terminal then new terminal.
+* On your terminal window type: cd desktop, then press enter.
+* Next type: cd onboarding-survey-app, then press enter.
+* Finally type: npm start, and press enter.
+* The app should start on a new browser tab with following url: http://localhost:3000/
+* You can test the App by clicking on the green button "Take the survey".
+* Follow the Applications steps by choosing the answers to the questions.
+* If you want to check the console log, click right click on the mouse and click inspect. Once the developer tool is open click on Console.
+* Choose the answer to the question and click on the green button "Next question". On the console you will see your chosen option that have been submitted.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Installed NPM packages/modules:
+* react-router-dom
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### I've created 11 components for this App:
+1. App.js
+2. Nav.js
+3. AppContext.js
+4. RadioButton.js
+5. Home.js (Main Survey Page)
+6. StepOne.js
+7. StepTwo.js
+8. StepThree.js
+9. StepFour.js
+10. StepFive.js
+11. DietComplete.js
