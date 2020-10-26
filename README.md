@@ -15,12 +15,10 @@ Online demo to test the app: https://codesandbox.io/s/onboarding-survey-app-262h
 * Follow the same installation steps above to complete the installation.
 
 ## How to use/test the App:
-* Download the Onboarding-Survey-App repository from my Github account. You can save it on your desktop to be able to find it quicker.
-* After downloading, you can use visual studio or terminal to open the App directory with following command:
-* Click terminal then new terminal.
-* On your terminal window type: cd desktop, then press enter.
-* Next type: cd onboarding-survey-app, then press enter.
-* Finally type: npm start, and press enter.
+* Run the following command
+* git clone git@github.com:hassan-mo/onboarding-survey-app.git
+* npm install
+* npm start
 * The app should start on a new browser tab with following url: http://localhost:3000/
 * You can test the App by clicking on the green button "Take the survey".
 * Follow the Applications steps by choosing the answers to the questions.
